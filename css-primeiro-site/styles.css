@@ -29,6 +29,7 @@ aside > p{
     width: 80%;
     font-size: 40px;
     font-style: italic;
+    line-height: 44px;
 }
 
 aside span{
@@ -109,5 +110,93 @@ main{
 }
 
 .registro {
+    text-align: center;
+}
+.dashboard{
+    background-color: #ededed;
+}
+.dashboard__header{
+    display: flex;
+    align-items: center;
+    background-color: #ffffff;
+}
+.dashboard__menu{
+    margin-left:auto ;
+}
+.dashboard__menu a{
+    
+    display: inline-block;
+    margin: 0 8;
+    color: #0f5830 ;
+    text-decoration: none;
+}
+.dashboard__menu a:hover{
+    text-decoration: underline;
+}
+.dashboard__title{
+    color: #0f5830;
+    text-decoration: none;
+}
+.dashboard__title span{
+    display: block;
+    font-size: 12px;
+    color: #cccccc;
+}
+.dashboard__hero{
+    font-size: 14px;
+    color: #999;
+}
+.dashboard__hero h2{
+    margin-bottom: 0px;
+    font-size: 32px;
+    color: #0f5830;
+}
+.card{
+    display: flex;
+    padding:24px;
+    background-color: #ffffff;
+    border: 1px solid #cccccc;
+}
+.card__badge{
+    display:inline-block;
+    padding: 4px 8 px;
+    background-color: #cccccc;
+    color: #0f5830;
+    font-size: 12px;
+    text-transform: uppercase;
+}
+.card__title{
+    margin: 8px 0;
+    font-size: 18px;
+    color: #0f5830;
+}
+.card p{
+    font-size: 14px;
+    color: #999;
+}
+.card__progress{
+    height: 12px;
+    border-radius: 8px;
+    background-color: #cccccc;
+}
+.card__progress div{
+    width: 60%;
+    height: 12px;
+    font-size: 9px;
+    color: #ffffff;
+    text-align: right;
+    border-radius: 8px;
+    background-color: #0f5830;
+}
+.card__button{
+    display: block;
+    width: 100%;
+    margin: 24px 0 18px 0;
+    padding: 4px;
+    background-color: #0f5830;
+    border-width: none;
+    border-style: solid;
+    border-color: transparent;
+    color: #ffffff;
     text-align: center;
 }

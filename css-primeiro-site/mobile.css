@@ -1,0 +1,13 @@
+/* 768 tablet em pé,resolucao*/
+@media (max-width: 768px){
+    aside{
+        display:none;
+    }
+    main,
+    .caddastro{
+        width:100%;
+    }
+    main{
+        padding: 0 16px;
+    }
+}
