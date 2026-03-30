@@ -110,3 +110,113 @@ for (const fruta of frutas) {
 // Maçã
 // Banana
 // Laranja
+
+// função
+
+function somar (a,b){
+    return a + b;
+}
+
+const resultado= somar (5,3);
+console.log(reasultado);//8
+
+//função anonima(forma diferente de chamar a função)
+const multiplicar = function(a, b) {
+ return a * b;
+};
+
+
+console.log(multiplicar(5, 3)); // 15
+
+//Arrow Function (ES6) Sintaxe mais curta e moderna.
+const dividir = (a, b) => {
+ return a / b;
+};
+
+// Sintaxe simplificada para retorno de 1 linha
+const subtrair = (a, b) => a - b; 
+
+console.log(dividir(10, 2)); // 5
+console.log(subtrair(10, 2)); // 8
+
+//forEach Executa uma função para cada elemento do array. Não retorna um novo array
+const numeros = [1, 2, 3];
+
+numeros.forEach((numero) => {
+ console.log(numero * 2);
+});
+
+// Saída: 2, 4, 6
+
+//map Cria um novo array com os resultados da chamada de uma função para cada elemento.
+const numeros = [1, 2, 3];
+
+const dobro = numeros.map((numero) => numero * 2);
+
+console.log(dobro); // [2, 4, 6]
+
+//filter()Cria um novo array contendo apenas os elementos que passam em um teste fornecido por uma função.
+
+const idades = [15, 20, 25, 17];
+
+
+const cnh = idades.filter((idade) => idade >= 18);
+
+
+console.log(maioresDeIdade); // [20, 25]
+//find Retorna o primeiro elemento do array que satisfaz a condição da função de teste. Se nenhum for encontrado,retorna undefined.
+const usuarios = [
+ { id: 1, nome: 'Ana' }, 
+ { id: 2, nome: 'Bruno' }
+];
+
+const usuarioEncontrado = usuarios.find((user) => user.id === 2);
+console.log(usuarioEncontrado); 
+
+// { id: 2, nome: 'Bruno' }
+
+//reduce() Executa uma função "redutora" em cada elemento do array (da esquerda para a direita), resultando em um único valor de retorno.
+const precos = [10, 25, 5];
+const total = precos.reduce((acumulador, preco) => acumulador +
+preco, 0);
+
+console.log(total); // 40
+
+//Spread (...) Permite expandir elementos de um array ou propriedades de um objeto em um novo array ou objeto. É ótimo para copiar e combinar dados sem modificar os originais.
+//Arrays
+
+const frutas = ['uva', 'maçã'];
+
+const novasFrutas = [...frutas, 'banana',
+'laranja'];
+
+console.log(novasFrutas); 
+
+// ['uva', 'maçã', 'banana', 'laranja']
+
+//Objetos
+
+const pessoa = { nome: 'João', idade: 30 };
+
+const pessoaAtualizada = { ...pessoa, cidade: 'São
+Paulo' };
+
+console.log(pessoaAtualizada); 
+
+// { nome: 'João', idade: 30, cidade: 'São Paulo' }
+
+//join() Junta todos os elementos de um array em uma única string. Você pode especificar um separador.
+
+const palavras = ['Olá', 'Mundo', 'JavaScript'];
+
+const fraseEspaco = palavras.join(' ');
+
+console.log(fraseEspaco); // "Olá Mundo JavaScript"
+
+const frasePonto = palavras.join('.');
+
+console.log(frasePonto); // "Olá.Mundo.JavaScript"
+
+const fraseTraco = palavras.join('-');
+
+console.log(fraseTraco); // "Olá-Mundo-JavaScript"
