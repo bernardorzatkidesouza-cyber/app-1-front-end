@@ -7,19 +7,22 @@
     <link rel="stylesheet" href="/css-primeiro-site/mobile.css">
     <title>Dashboard</title>
 </head>
+</head>
 <body class="dashboard">
 
-    <header clas="dashboard__header">
-        <h1 class="dashboard__title">Academia <span>Portal do aluno</span></h1>    
-        <nav class="dashboard__menu">
-            <a href="">Painel</a>
-            <a href="">Disciplinas</a>
-            <a href="">Tutor IA</a>
-            <a href="">Perfil</a>
-        </nav>
+    <header>
+        <div class="dashboard__header">
+            <h1 class="dashboard__title">Academia <span>Portal do aluno</span></h1>    
+            <nav class="dashboard__menu">
+                <a href="">Painel</a>
+                <a href="">Disciplinas</a>
+                <a href="">Tutor IA</a>
+                <a href="">Perfil</a>
+            </nav>
+        </div>
     </header>
 
-    <div>
+    <div class="dashboard__body">
         
         <div class="dashboard__hero">
             <h2>Boa noite, João</h2>
@@ -27,23 +30,59 @@
         </div>
         
         <div class="card">
-            <div>
+            <div class="card__body">
                 <span class="card__badge">Em progresso</span>
-            
                 <h3 class="card__title">Front-end</h3>
-            
                 <p>Aula 2: Conceitos de desenvolvimento front-end e Git + Github</p>
-            
-                <div>
-           
-                    <div class="card__progress">65%</div>
-            
+                <div class="card__progress">
+                    <div style="width: 65%;">65%</div>
                 </div>
-            
-            <button class="card__button">Retomar estudos</button>
+            </div> 
+            <div class="card__footer">
+                <button class="card__button">Retomar estudos</button>
+            </div>
         </div>
-        
-    </div>
+
+         <div class="card">
+            <div class="card__body">
+                <span class="card__badge">Em progresso</span>
+                <h3 class="card__title">UX Design</h3>
+                <p>Aula 3: Conceitos de UX Design e prototipagem</p>
+                <div class="card__progress">
+                    <div style="width: 36%;">36%</div>
+                </div>
+            </div> 
+            <div class="card__footer">
+                <button class="card__button">Retomar estudos</button>
+            </div>
+        </div>
+
+        <div class="card__group">
+            <div class="card card--33">
+                <div class="card__body">
+                    <span class="card__badge card__badge--title">Tempo de estudo</span>
+                    <h3 class="card__title">12h 45m</h3>
+                    <p>Esta semana</p>
+                </div>
+            </div>
+            
+            <div class="card card--33">
+                <div class="card__body">
+                    <span class="card__badge card__badge--title">Tarefas pendentes</span>
+                    <h3 class="card__title">2</h3>
+                    <p>Próximo vencimento em 2 dias</p>
+                </div>
+            </div>
+            
+            <div class="card card--33">
+                <div class="card__body">
+                    <span class="card__badge card__badge--title">Chat com a IA</span>
+                    <h3 class="card__title">8</h3>
+                    <p>Tópicos ativos</p>
+                </div>
+            </div>
+        </div>
+
         
     </div>
 
