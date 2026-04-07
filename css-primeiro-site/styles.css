@@ -195,6 +195,7 @@ header{
     margin-right: auto;
 }
 
+
 .card__footer{
     align-self: center;
 }
@@ -209,6 +210,12 @@ header{
 }
 
 .card__title{
+    margin: 8px 0;
+    font-size: 18px;
+    color: #0f5830;
+}
+
+.card__titledois{
     margin: 8px 0;
     font-size: 18px;
     color: #0f5830;

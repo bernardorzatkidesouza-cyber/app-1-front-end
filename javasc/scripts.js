@@ -1,112 +1,44 @@
-let nome="João";
-let Nome="Maria";
-
-console.log(nome)
-console.log(Nome)
-
-let idade= 30;
-let cidade="São Paulo";
-
-if (idade>18){
-    console.log(nome + " é maior de idade.");
-}else {
-    console.log(nome +" é menor de idade")
+const pessoa={
+    nome:'Paulo',
+    idade:33,
+    cidade:'Criciuma'
 }
+function getMsg(){
+    const hora= new Date().getHours();
 
-
-let profissao= "Desenvolvedor";
-function saudacao(){
-    console.log("olá!");
+    if (hora <12){
+        return'Bom Dia'
+    }
+    if(hora<18){
+        return'Boa Tarde'
+    }
+    return'Boa Noite'
 }
+const greething=document.getElementById('greething');
+greething.textContent = `${getMsg()}, ${pessoa.nome}`;
 
-let meuNome= "João";
-meuNome="Pedro";
+//banners indiacadores
 
-const PI=3.14159;
-const usuario = {nome: "Maria"};
-ususario.nome="Ana";
-
-console.log(ususario)
-
-//strig
-const nome= "Carlos"
-//number
-const idade= 25;
-//boolean
-const temCarro=false;
-//Undefined
-let endereco;
-//usando template literals
-const saudacao = `olá, meu noe é ${nome} e tenho ${idade} anos`
-console.log(saudacao);
-
-//array
-const frutas = ["maça","Banana","Morango"];
-console.log(frutas)
-console.log(frutas[1])
-//object
-const pessoa = {
-    nome:"Ana",
-    idade: 30,
-    cidade: "Rio de Janeiro"
-};
-
-//usando template literals
-const saudacao = `Olá, meu nome é ${pessoa.nome} e tenho ${pessoa.idade} anos.`
-console.log (saudacao);
-
-//condicional if/else
-    const idade=20;
-if (idade>18){
-    console.log(nome + " é maior de idade.");
-}else {
-    console.log(nome +" é menor de idade")
+const indicadores={
+    tempo:"18h 45m",
+    tarefas: 5,
+    chats:16
 }
-
-//ternário
-let validaIdade = idade >= 18 ?"maior" : "menor";
-console.log("você é ", validaIdade, " de idade");
-//condicional switch
-const statusSemaforo = "vermelho";
-switch (statusSemaforo) {
-    case "vermelho":
-        console.log("Pare!");
-        break
-    case "verde":
-        console.log("Siga!");
-        break
-    default:
-        console.log("Aguarde!");
+const titledois=document.getElementsByClassName('card__titledois');
+console.log(titledois);
+titledois[0].textContent = `${indicadores.tempo}`;
+titledois[1].textContent = `${indicadores.tarefas}`;
+titledois[2].textContent = `${indicadores.chats}`;
+//aulas concluidas
+const aulas={
+    front:46,
+    desing:12
 }
-//loops
-let contador = 0;
-while (contador < 3) {
- console.log(`O contador é ${contador}.`);
- contador++; // evitar um loop infinito
-}
+const progress= document.querySelectorAll('.card__progress div');
+progress[0].textContent = aulas.front + '%';
+progress[0].textContent = aulas.front + '%';
 
-//'++' somar 1 e '--' diminuir 1
+progress[0].textContent = aulas.front + '%';
+progress[0].textContent = aulas.front + '%';
 
-// Saída:
-// O contador é 0.
-// O contador é 1.
-// O contador é 2.
-
-for (let i = 0; i < 5; i++) {
- console.log(`O valor de i é ${i}.`);
-}
-// Saída:
-// O valor de i é 0.
-// O valor de i é 1.
-// O valor de i é 2.
-// O valor de i é 3.
-// O valor de i é 4.
-
-const frutas = ["Maçã", "Banana", "Laranja"];
-for (const fruta of frutas) {
- console.log(fruta);
-}
-// Saída:
-// Maçã
-// Banana
-// Laranja
+//alert no click(medio)

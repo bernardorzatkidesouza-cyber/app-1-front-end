@@ -220,3 +220,31 @@ console.log(frasePonto); // "Olá.Mundo.JavaScript"
 const fraseTraco = palavras.join('-');
 
 console.log(fraseTraco); // "Olá-Mundo-JavaScript"
+----------------------------------------------------------------
+//por id:Retorna um único elemento, pois o id deve ser único na página.
+//html:<h1 id="titulo-principal">Olá Mundo</h1>
+const titulo =document.getElementById ( 'titulo-principal');
+
+
+console.log(titulo.textContent); 
+//saida;ola mundo
+
+//Por Classe (getElementsByClassName)
+//Retorna uma coleção de elementos (HTMLCollection), mesmo que haja apenas um.
+// HTML: <p class="texto">Conteúdo 1</p> <p class="texto">Conteúdo 2</p>
+const textos=document.getElementsByClassName('texto');
+
+console.log(textos[ ].textContent);
+// Saída: "Conteúdo 1"
+
+//Por Seletor CSS (querySelector e querySelectorAll)
+//O método mais flexível e moderno, usando a sintaxe de seletores CSS.
+// HTML: <ul id="lista"><li class="item">Item 1</li></ul>
+const primeiroItem=document.querySelector('#lista .item');
+console.log(primeiroItem.textContent);// Saída: "Item 1"
+
+const todosItens=document.querySelectorAll('.item');
+console.log(primeiroItem.length);// Saída: 1
+
+
+
