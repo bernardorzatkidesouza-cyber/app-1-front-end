@@ -1,23 +1,30 @@
-const pessoa={
-    nome:'Paulo',
-    idade:33,
-    cidade:'Criciuma'
+const pessoa = {
+    nome: 'Paulo',
+    idade: 33,
+    cidade: 'Criciúma'
 }
+
 function getMsg(){
-    const hora= new Date().getHours();
+    const hora = new Date().getHours();
 
-    if (hora <12){
-        return'Bom Dia'
-    }
-    if(hora<18){
-        return'Boa Tarde'
-    }
-    return'Boa Noite'
+    if (hora < 12) {
+        return 'Bom dia';
+    } 
+    
+    if (hora < 18) {
+        return 'Boa tarde';
+    } 
+    
+    return 'Boa aula';
 }
-const greething=document.getElementById('greething');
-greething.textContent = `${getMsg()}, ${pessoa.nome}`;
 
-//banners indiacadores
+const greeting = document.getElementById('greeting');
+greeting.textContent = `${getMsg()}, ${pessoa.nome}`;
+
+
+/*
+ Banners indicadores (Fácil)
+*/
 
 const indicadores={
     tempo:"18h 45m",
@@ -29,16 +36,45 @@ console.log(titledois);
 titledois[0].textContent = `${indicadores.tempo}`;
 titledois[1].textContent = `${indicadores.tarefas}`;
 titledois[2].textContent = `${indicadores.chats}`;
-//aulas concluidas
-const aulas={
-    front:46,
-    desing:12
+/*
+ Aulas conluídas (Médio)
+*/
+
+const aulas = {
+    front: 46,
+    design: 82
 }
-const progress= document.querySelectorAll('.card__progress div');
-progress[0].textContent = aulas.front + '%';
-progress[0].textContent = aulas.front + '%';
+
+const progress = document.querySelectorAll('.card__progress div');
 
 progress[0].textContent = aulas.front + '%';
-progress[0].textContent = aulas.front + '%';
+progress[0].style.width = aulas.front + '%';
 
-//alert no click(medio)
+progress[1].textContent = aulas.design + '%';
+progress[1].style.width = aulas.design + '%';
+
+/*
+ alert no click do botão (Médio+) 
+ e retornar o id do target (Médio++)
+*/
+
+const btns = document.querySelectorAll('.card__button');
+for (const btn of btns) {
+    btn.addEventListener('click', (event) => {
+        alert(`o botão [${event.target.id}] foi clicado!`)
+    })
+}
+
+
+/*
+ adicionando um elemento novo
+*/
+
+const modelo = document.querySelector('.card__group .card');
+const novo = modelo.cloneNode(true);
+
+const novo_titulo = novo.querySelector('.card__badge--title');
+novo_titulo.textContent = 'Novo titulo';
+
+const group = document.querySelector('.card__group');
+group.appendChild(novo);
