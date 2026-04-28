@@ -1,0 +1,23 @@
+{
+  "name": "app-alunos",
+  "version": "1.0.0",
+  "description": "trabalho/atividade de front end referencia a criação de uma pagina web",
+  "homepage": "https://github.com/bernardorzatkidesouza-cyber/app-1-front-end#readme",
+  "bugs": {
+    "url": "https://github.com/bernardorzatkidesouza-cyber/app-1-front-end/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bernardorzatkidesouza-cyber/app-1-front-end.git"
+  },
+  "license": "ISC",
+  "author": "",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "moment": "^2.30.1"
+  }
+}

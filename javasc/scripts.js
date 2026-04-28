@@ -21,6 +21,11 @@ function getMsg(){
 const greeting = document.getElementById('greeting');
 greeting.textContent = `${getMsg()}, ${pessoa.nome}`;
 
+const dataAtual = moment().format('MMMM Do YYYY, h:mm:ss a');
+console.log(dataAtual)
+
+const dia  = document.getElementById('dataDia');
+dia.textContent = dataAtual
 
 /*
  Banners indicadores (Fácil)
